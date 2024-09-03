@@ -1,0 +1,723 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.429);
+    height: 120px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+}
+
+.img-me {
+    width: 150%;
+    height: 600px;
+}
+
+.logo {
+    font-size: 2em;
+    color: #555;
+    cursor: default;
+}
+
+.logo span {
+    color: #7d2ae8;
+}
+
+.navigation {
+    margin-left: -300px;
+}
+
+.navigation a {
+    font-size: 1.1em;
+    color: #555;
+    text-decoration: none;
+    margin-right: 40px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.navigation a:hover {
+    color: #7d2ae8;
+}
+
+.btn-talk {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 35px;
+    background: #000000;
+    border-radius: 10px;
+
+    font-weight: 500;
+    transition: .3s;
+}
+
+.btn-talk:hover {
+    color: #7d2ae8;
+    background: transparent;
+    border: 2px solid #7d2ae8;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 30px 100px;
+
+}
+
+.content {
+    max-width: 500px;
+    color: #555;
+}
+
+.content h2 {
+    font-size: 3em;
+}
+
+.content h2 span {
+    color: #7d2ae8;
+}
+
+.content h4 {
+    font-size: 2em;
+}
+
+.content p {
+    font-weight: 700;
+    font-size: 11px;
+    padding: 10px 0 40px 0;
+}
+
+.btn-group a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 40px;
+    background: #7d2ae8;
+    border-radius: 10px;
+    border: 2px solid #7d2ae8;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.btn-group a:hover:nth-child(1) {
+    color: #7d2ae8;
+    background: transparent;
+}
+
+.btn-group a:nth-child(2) {
+    color: #7d2ae8;
+    background: transparent;
+    margin-left: 30px;
+    padding: 10px 30px;
+}
+
+.btn-group a:hover:nth-child(2) {
+    color: #fff;
+    background: #7d2ae8;
+}
+
+.social-icons {
+    position: absolute;
+    bottom: 50px;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: #7d2ae8;
+    border-radius: 50%;
+    margin-right: 22px;
+    text-align: center;
+    line-height: 35px;
+    border: 1px solid #fff;
+    outline: 2px solid #7d2ae8;
+    transition: .3s;
+}
+
+.social-icons a:hover {
+    transform: translateY(-5px);
+}
+
+.social-icons a i {
+    color: #fff;
+}
+
+
+.services,
+.projects {
+    color: #fff;
+    background-image: linear-gradient(195deg,
+            hsl(0deg 0% 0%) 0%,
+            hsl(238deg 37% 19%) 39%,
+            hsl(238deg 37% 26%) 67%,
+            hsl(238deg 37% 32%) 80%,
+            hsl(238deg 37% 37%) 87%,
+            hsl(238deg 37% 42%) 92%,
+            hsl(238deg 37% 46%) 95%,
+            hsl(238deg 37% 49%) 98%,
+            hsl(238deg 42% 53%) 99%,
+            hsl(238deg 47% 56%) 100%);
+    width: 100%;
+    height: 80vh;
+    justify-content: space-between;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services .title::before,
+.projects .title::before {
+    background: #fff;
+}
+
+.services .serv-content .card {
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 10px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover {
+    background-image: linear-gradient(195deg,
+            #7d2ae8,
+            #7d2ae8,
+            #7d2ae8,
+            #7d2ae8,
+            #7d2ae8,
+            #7d2ae8,
+            #7d2ae8,
+            #7d2ae8,
+            #7d2ae8,
+            #7d2ae8,
+            #7d2ae8
+            hsl(235deg 7% 35%) 100%);
+}
+
+.services .serv-content .card .box {
+    transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover .box {
+    transform: scale(1.05);
+}
+
+.services .serv-content .card i {
+    font-size: 50px;
+    color: #fafafa;
+    background: linear-gradient(135deg, #838f9f, #7d2ae8, #a967ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: color 0.3s ease;
+}
+
+.services .serv-content .card:hover i {
+    color: #fff;
+}
+
+.services .serv-content .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.title {
+    margin-bottom: 50px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    color: #fefdff;
+}
+
+.card-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-con {
+    display: flex;
+    margin-left: 20px;
+}
+
+.services,
+.projects {
+    color: #fff;
+    background: #111;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+}
+
+.about,
+.services,
+.skills,
+.projects,
+.contact,
+footer {
+    font-family: "Poppins", sans-serif;
+}
+
+section {
+    padding: 100px 0;
+}
+
+section {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+:host,
+:root {
+    --fa-style-family-classic: "Font Awesome 6 Free";
+    --fa-font-solid: normal 900 1em / 1 "Font Awesome 6 Free";
+}
+
+:host,
+:root {
+    --fa-font-regular: normal 400 1em / 1 "Font Awesome 6 Free";
+}
+
+:host,
+:root {
+    --fa-style-family-brands: "Font Awesome 6 Brands";
+    --fa-font-brands: normal 400 1em / 1 "Font Awesome 6 Brands";
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 12px;
+    background: linear-gradient(135deg, #f57308, #fff, rgb(11, 242, 7));
+}
+
+::-webkit-scrollbar-track {
+    background: #000;
+}
+
+.project {
+    width: 100%;
+    height: 500px;
+    background-color: rgb(0, 0, 0);
+}
+
+.project-text {
+    font-size: 2rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+
+}
+
+
+.project-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-1 {
+    width: 100%;
+    height: 100%;
+    margin-top: 70px;
+    border-radius: 20px;
+    z-index: 100;
+}
+
+.project-1 a img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.project-1-text {
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+
+}
+.github{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: x-large;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.github a i{
+    color: #7d2ae8;
+}
+
+.github a{
+    color: #551A8B;
+}
+a{
+    text-decoration: none;
+}
+.project-1-text p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: grey;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.project-1:hover {
+    box-shadow: rgba(133, 133, 133, 0.56) 0px 22px 70px 4px;
+    transition: all 0.5s ease-in-out;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+.contat {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000f7;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.contat::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+section {
+    position: relative;
+    z-index: 3;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: black;
+
+}
+
+.container {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+
+}
+
+.section-header {
+    margin-bottom: 50px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+}
+
+.section-header h2 {
+    color: #f9f8f8;
+    font-weight: bold;
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+
+}
+
+.section-header p {
+    color: rgb(0, 0, 0);
+display: none;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-info {
+    width: 100%;
+}
+
+.contact-info-item {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.contact-info-icon {
+    height: 70px;
+    width: 70px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.contact-info-icon i {
+    font-size: 30px;
+    line-height: 70px;
+}
+
+.contact-info-content {
+    margin-left: 20px;
+}
+
+.contact-info-content h4 {
+    color: #7d2ae8;
+    font-size: 1.4em;
+    margin-bottom: 5px;
+}
+
+.contact-info-content p {
+    color: #fdfafa;
+    font-size: 1em;
+}
+
+.contact-form {
+    padding: 40px;
+    width:700px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: #000000;
+}
+
+.contact-form h2 {
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #a967ff;
+    }
+
+.contact-form .input-box {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contact-form .input-box input,
+.contact-form .input-box textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    background: transparent;
+    border: 2px solid #a967ff;
+    outline: none;
+    resize: none;
+    border-radius: 5px;
+    padding-left: 10px;
+    color: white
+
+}
+
+
+
+
+
+.contact-form .input-box input[type="submit"] {
+    width: 100%;
+    background: #7d2ae8;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #7d2ae8;
+    transition: 0.5s;
+    color:white;
+}
+
+.contact-form .input-box input[type="submit"]:hover {
+    background: transparent;
+    color: #7d2ae8;
+    border: 1px solid #7d2ae8;
+}
+
+footer {
+    background: #111;
+    padding: 6px 16px;
+    color: #888c8d;
+    text-align: center;
+}y
+
+footer span a {
+    color: #1e3551;
+    text-decoration: none;
+}
+
+footer span a:hover {
+    text-decoration: underline;
+}
+/* Responsive Styles */
+@media (max-width: 992px) {
+    header {
+        padding: 20px 50px;
+        height: auto;
+        flex-direction: column;
+    }
+    
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation a {
+        margin: 10px 0;
+    }
+
+    .main {
+        flex-direction: column;
+        margin: 50px auto;
+        height: auto;
+    }
+
+    .home .content h2 {
+        font-size: 2.5em;
+    }
+
+    .home .content h4 {
+        font-size: 2em;
+    }
+
+    .btn-group a {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    .services {
+        padding: 100px 50px;
+    }
+
+    .project-main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-1 {
+        width: 100%;
+    }
+
+    .contact {
+        padding: 100px 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px 20px;
+    }
+    
+    .logo img {
+        width: 150px;
+        height: 100px;
+    }
+
+    .main {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .home .content h2 {
+        font-size: 2em;
+    }
+
+    .home .content h4 {
+        font-size: 1.5em;
+    }
+
+    .btn-group a {
+        font-size: 0.9em;
+        padding: 8px 15px;
+    }
+
+    .card-main {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .services {
+        padding: 80px 30px;
+    }
+
+    .project {
+        padding: 100px 30px;
+    }
+
+    .contact {
+        padding: 80px 30px;
+    }
+
+    footer {
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .main {
+        margin: 30px auto;
+    }
+
+    .home .content h2 {
+        font-size: 1.8em;
+    }
+
+    .home .content h4 {
+        font-size: 1.3em;
+    }
+
+    .btn-group a {
+        font-size: 0.8em;
+    }
+
+    .services {
+        padding: 50px 20px;
+    }
+
+    .project {
+        padding: 80px 20px;
+    }
+
+    .contact {
+        padding: 60px 20px;
+    }
+}
