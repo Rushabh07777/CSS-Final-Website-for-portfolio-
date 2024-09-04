@@ -382,12 +382,14 @@ section {
     justify-content: space-around;
 }
 
-.github a i{
+.github i {
+    margin-right: 20px;
     color: #7d2ae8;
 }
 
+
 .github a{
-    color: #551A8B;
+    color: #ffffff;
 }
 a{
     text-decoration: none;
